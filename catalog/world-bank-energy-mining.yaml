@@ -1,0 +1,46 @@
+id: world-bank-energy-mining
+type: dataset
+title: World Bank Energy & Mining Indicators (World Development Indicators)
+description: |
+  Cross-country energy indicators — electricity access, consumption, renewable share, and energy imports — compiled by the World Bank as part of its World Development Indicators database.
+publisher: World Bank
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- electricity-access
+- consumption
+- renewables
+- global
+source:
+  canonical_url: https://data.worldbank.org/topic/energy-and-mining
+access:
+  method:
+  - web
+  - api
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- json
+- xml
+status: live
+status_since: '2026-07-01'
+status_source: curator
+observed:
+  checked: '2026-07-01'
+  reachable: true
+  http_status: 200
+  final_url: https://data.worldbank.org/topic/energy-and-mining
+  redirect_chain: []
+  fingerprint_result: no-baseline
+coverage:
+  spatial: global (World Bank member countries)
+  temporal: 1960-present (indicator-dependent)
+  cadence: annual
+license: CC-BY-4.0 (World Bank Open Data terms)
+attribution: World Bank, World Development Indicators
+notes: |
+  Verified reachable this session (HTTP 200). IEA and IRENA — the other obvious international energy-statistics bodies — both returned bot-challenge pages (Cloudflare / Azure WAF) on direct fetch this session, the same class of block tracked for BLS/SEC in almanac-template#2. Worth a headless-verified follow-up entry once that fix lands, rather than skipping them. Seeded as this vertical's first international (non-US) source per operator request to seed the new verticals international-first.
