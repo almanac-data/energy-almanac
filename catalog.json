@@ -1,9 +1,9 @@
 {
   "name": "Energy Almanac",
   "description": "An open, versioned index of public energy data.",
-  "count": 7,
+  "count": 8,
   "by_status": {
-    "live": 7
+    "live": 8
   },
   "entries": [
     {
@@ -309,6 +309,60 @@
       "license": "public-domain (US Gov work)",
       "attribution": "U.S. EPA, eGRID",
       "notes": "Human-verified 2026-10-31: HTTP 200 (page \"Last updated on September 21, 2026\"). The detailed-data page (https://www.epa.gov/egrid/detailed-data) lists eGRID2023, released 1/15/2025 with revisions on 1/17/2025 and 6/12/2025, as an xlsx download with a PDF technical guide. Editions now come out roughly yearly but not on a fixed schedule, so cadence is irregular. The 1996 start year comes from EPA's historical editions and should be confirmed by a steward.\n"
+    },
+    {
+      "id": "eurostat-energy-database",
+      "type": "dataset",
+      "title": "Eurostat Energy Database",
+      "description": "Eurostat's official EU energy statistics — energy balances, supply and consumption by fuel, prices, and renewables shares — harmonised across EU member states.\n",
+      "publisher": "Eurostat (European Commission)",
+      "jurisdiction": {
+        "scope": "regional-bloc",
+        "country": null
+      },
+      "topics": [
+        "energy-balances",
+        "consumption",
+        "prices",
+        "renewables",
+        "europe"
+      ],
+      "source": {
+        "canonical_url": "https://ec.europa.eu/eurostat/web/energy/database"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "tsv",
+        "xlsx",
+        "sdmx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "EU member states (plus some EFTA and candidate countries)",
+        "temporal": "varies by dataset",
+        "cadence": "irregular"
+      },
+      "license": "CC-BY-4.0 (Eurostat copyright notice and free re-use of data)",
+      "attribution": "Eurostat",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page shows the Energy database with selected datasets and the data navigation tree. Eurostat's copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice) licenses its content under CC BY 4.0. Cadence varies by table (monthly to annual), so it is recorded as irregular for the collection. API and bulk access go through Eurostat's general dissemination services.\n"
     },
     {
       "id": "world-bank-energy-mining",
