@@ -1,11 +1,61 @@
 {
   "name": "Energy Almanac",
   "description": "An open, versioned index of public energy data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
+    {
+      "id": "eia-860-annual-electric-generator-report",
+      "type": "dataset",
+      "title": "EIA-860 Annual Electric Generator Report",
+      "description": "Generator-level data on every existing and planned U.S. electric generating unit of 1 MW or more — location, capacity, technology, fuel, and status — collected through Form EIA-860.\n",
+      "publisher": "U.S. Energy Information Administration (EIA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "electricity",
+        "power-plants",
+        "generation-capacity",
+        "plant-level"
+      ],
+      "source": {
+        "canonical_url": "https://www.eia.gov/electricity/data/eia860/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "zip"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (plant and generator level)",
+        "temporal": "1990-present (with predecessor EIA-860A/860B forms)",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Energy Information Administration, Form EIA-860",
+      "notes": "Human-verified 2026-10-31: HTTP 200. Page shows \"Release Date: September 10, 2026, Final 2025 data\" with an early release of 2026 data due June 2027. The 1 MW threshold and the 1990 start year come from EIA's usual description of the survey and should be confirmed by a steward. EIA publications are public domain (EIA Copyrights and Reuse page).\n"
+    },
     {
       "id": "world-bank-energy-mining",
       "type": "dataset",
