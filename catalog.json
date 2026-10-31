@@ -1,9 +1,9 @@
 {
   "name": "Energy Almanac",
   "description": "An open, versioned index of public energy data.",
-  "count": 8,
+  "count": 9,
   "by_status": {
-    "live": 8
+    "live": 9
   },
   "entries": [
     {
@@ -363,6 +363,57 @@
       "license": "CC-BY-4.0 (Eurostat copyright notice and free re-use of data)",
       "attribution": "Eurostat",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page shows the Energy database with selected datasets and the data navigation tree. Eurostat's copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice) licenses its content under CC BY 4.0. Cadence varies by table (monthly to annual), so it is recorded as irregular for the collection. API and bulk access go through Eurostat's general dissemination services.\n"
+    },
+    {
+      "id": "jodi-oil-world-database",
+      "type": "dataset",
+      "title": "JODI-Oil World Database",
+      "description": "Monthly oil production, trade, refinery, demand, and stock data for over 100 economies, compiled by the Joint Organisations Data Initiative from national submissions to its partner organisations.\n",
+      "publisher": "Joint Organisations Data Initiative (JODI), coordinated by the International Energy Forum (IEF)",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
+      "topics": [
+        "oil",
+        "production",
+        "stocks",
+        "trade",
+        "global"
+      ],
+      "source": {
+        "canonical_url": "https://www.jodidata.org/oil/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "ivt"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (participating economies)",
+        "temporal": "January 2002-present",
+        "cadence": "monthly"
+      },
+      "license": "unverified — downloads are offered free of charge; no data license is stated on the JODI site",
+      "attribution": "Joint Organisations Data Initiative (JODI)",
+      "notes": "Human-verified 2026-10-31: jodidata.org returned HTTP 200. The data downloads page (https://www.jodidata.org/oil/database/data-downloads.aspx) offers the complete series \"from January 2002 to one month-old\" for free in .ivt (Beyond 20/20) and .csv. The partners page lists IEF, APEC, Eurostat, GECF, IEA, OLADE, OPEC, and UNSD. The canonical_url /oil/ is the section root; scripts/check_links.py reported it ok (HTTP 200). \"Over 100 economies\" comes from JODI's usual description and was not checked against the participant list. JODI-Gas is a separate database and deserves its own entry.\n"
     },
     {
       "id": "world-bank-energy-mining",
