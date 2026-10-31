@@ -1,9 +1,9 @@
 {
   "name": "Energy Almanac",
   "description": "An open, versioned index of public energy data.",
-  "count": 10,
+  "count": 11,
   "by_status": {
-    "live": 10
+    "live": 11
   },
   "entries": [
     {
@@ -414,6 +414,57 @@
       "license": "CC-BY-4.0 (Eurostat copyright notice and free re-use of data)",
       "attribution": "Eurostat",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page shows the Energy database with selected datasets and the data navigation tree. Eurostat's copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice) licenses its content under CC BY 4.0. Cadence varies by table (monthly to annual), so it is recorded as irregular for the collection. API and bulk access go through Eurostat's general dissemination services.\n"
+    },
+    {
+      "id": "jodi-gas-world-database",
+      "type": "dataset",
+      "title": "JODI-Gas World Database",
+      "description": "Monthly natural gas production, trade, consumption, and stock data for participating economies, compiled by the Joint Organisations Data Initiative from national submissions to its partner organisations — the gas counterpart to JODI-Oil.\n",
+      "publisher": "Joint Organisations Data Initiative (JODI), coordinated by the International Energy Forum (IEF)",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
+      "topics": [
+        "natural-gas",
+        "production",
+        "trade",
+        "global"
+      ],
+      "source": {
+        "canonical_url": "https://www.jodidata.org/gas/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": "CSV downloads are open; the JODI REST API requires a free JODI website account.",
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (participating economies)",
+        "temporal": "January 2009-present",
+        "cadence": "monthly"
+      },
+      "license": "unverified — downloads are offered free of charge; no data license is stated on the JODI site",
+      "attribution": "Joint Organisations Data Initiative (JODI)",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The data downloads page (https://www.jodidata.org/gas/database/data-downloads.aspx) says complete series \"from January 2009 to one month-old can be downloaded, for free, in a beta version of .csv format\". It also says JODI-Gas is available through the JODI REST API, which needs a free JODI website account. The API's json format is assumed. No license is stated, matching the jodi-oil-world-database entry.\n"
     },
     {
       "id": "jodi-oil-world-database",
