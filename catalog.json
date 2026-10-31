@@ -1,11 +1,215 @@
 {
   "name": "Energy Almanac",
   "description": "An open, versioned index of public energy data.",
-  "count": 2,
+  "count": 6,
   "by_status": {
-    "live": 2
+    "live": 6
   },
   "entries": [
+    {
+      "id": "eia-860-annual-electric-generator-report",
+      "type": "dataset",
+      "title": "EIA-860 Annual Electric Generator Report",
+      "description": "Generator-level data on every existing and planned U.S. electric generating unit of 1 MW or more — location, capacity, technology, fuel, and status — collected through Form EIA-860.\n",
+      "publisher": "U.S. Energy Information Administration (EIA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "electricity",
+        "power-plants",
+        "generation-capacity",
+        "plant-level"
+      ],
+      "source": {
+        "canonical_url": "https://www.eia.gov/electricity/data/eia860/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "zip"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (plant and generator level)",
+        "temporal": "1990-present (with predecessor EIA-860A/860B forms)",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Energy Information Administration, Form EIA-860",
+      "notes": "Human-verified 2026-10-31: HTTP 200. Page shows \"Release Date: September 10, 2026, Final 2025 data\" with an early release of 2026 data due June 2027. The 1 MW threshold and the 1990 start year come from EIA's usual description of the survey and should be confirmed by a steward. EIA publications are public domain (EIA Copyrights and Reuse page).\n"
+    },
+    {
+      "id": "eia-923-power-plant-operations-report",
+      "type": "dataset",
+      "title": "EIA-923 Power Plant Operations Report",
+      "description": "Monthly and annual plant-level data on U.S. electricity generation, fuel consumption, fuel stocks, and fuel receipts and costs, collected through Form EIA-923 and its predecessors (EIA-906/920).\n",
+      "publisher": "U.S. Energy Information Administration (EIA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "electricity",
+        "generation",
+        "fuel-consumption",
+        "plant-level"
+      ],
+      "source": {
+        "canonical_url": "https://www.eia.gov/electricity/data/eia923/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "zip"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (plant level)",
+        "temporal": "multi-decade, with predecessor forms EIA-906/920",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Energy Information Administration, Form EIA-923",
+      "notes": "Human-verified 2026-10-31: HTTP 200. Page shows the monthly release of October 23, 2026 (August 2026 data), with the next due end of November 2026, and the annual final 2025 release of September 14, 2026. EIA publications are public domain (EIA Copyrights and Reuse page).\n"
+    },
+    {
+      "id": "eia-open-data",
+      "type": "dataset",
+      "title": "EIA Open Data (API v2 and bulk files)",
+      "description": "The U.S. Energy Information Administration's programmatic access point to its published energy statistics — petroleum, natural gas, coal, electricity, renewables, nuclear, state energy data, and forecasts — through API v2 and bulk download files.\n",
+      "publisher": "U.S. Energy Information Administration (EIA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "electricity",
+        "petroleum",
+        "natural-gas",
+        "coal",
+        "api"
+      ],
+      "source": {
+        "canonical_url": "https://www.eia.gov/opendata/"
+      },
+      "access": {
+        "method": [
+          "api",
+          "bulk",
+          "web"
+        ],
+        "auth_required": true,
+        "auth_note": "Free API key via registration on the Open Data page; bulk files need no key.",
+        "rate_limit": null
+      },
+      "format": [
+        "json",
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national, state, plant level depending on dataset); some international series",
+        "temporal": "varies by series",
+        "cadence": "event"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Energy Information Administration, Open Data",
+      "notes": "Human-verified 2026-10-31: HTTP 200. Page offers API key registration under the API Terms of Service and describes the bulk files. EIA's Copyrights and Reuse page (https://www.eia.gov/about/copyrights_reuse.php) states its publications are in the public domain. Cadence is event because series update on their own release schedules.\n"
+    },
+    {
+      "id": "eia-short-term-energy-outlook",
+      "type": "dataset",
+      "title": "EIA Short-Term Energy Outlook (STEO)",
+      "description": "EIA's monthly 18–24 month forecasts of U.S. and global energy supply, demand, and prices — oil, petroleum products, natural gas, electricity, coal, and renewables — with full data tables.\n",
+      "publisher": "U.S. Energy Information Administration (EIA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "forecasts",
+        "prices",
+        "petroleum",
+        "natural-gas",
+        "electricity"
+      ],
+      "source": {
+        "canonical_url": "https://www.eia.gov/outlooks/steo/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": "Web tables are open; API access goes through EIA Open Data, which needs a free key.",
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States and world",
+        "temporal": "recent history plus the forecast horizon",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Energy Information Administration, Short-Term Energy Outlook",
+      "notes": "Human-verified 2026-10-31: HTTP 200. Page shows \"Release Date: October 6, 2026 | Forecast Completed: October 1, 2026 | Next Release Date: November 10, 2026\" and links to all tables and figures. API availability is through EIA's Open Data service (see eia-open-data). EIA publications are public domain.\n"
+    },
     {
       "id": "eia-state-energy-data-system",
       "type": "dataset",
