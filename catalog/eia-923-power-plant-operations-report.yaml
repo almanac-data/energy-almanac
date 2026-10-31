@@ -1,0 +1,42 @@
+id: eia-923-power-plant-operations-report
+type: dataset
+title: EIA-923 Power Plant Operations Report
+description: |
+  Monthly and annual plant-level data on U.S. electricity generation, fuel consumption, fuel stocks, and fuel receipts and costs, collected through Form EIA-923 and its predecessors (EIA-906/920).
+publisher: U.S. Energy Information Administration (EIA)
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- electricity
+- generation
+- fuel-consumption
+- plant-level
+source:
+  canonical_url: https://www.eia.gov/electricity/data/eia923/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+- zip
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (plant level)
+  temporal: multi-decade, with predecessor forms EIA-906/920
+  cadence: monthly
+license: public-domain (US Gov work)
+attribution: U.S. Energy Information Administration, Form EIA-923
+notes: |
+  Human-verified 2026-10-31: HTTP 200. Page shows the monthly release of October 23, 2026 (August 2026 data), with the next due end of November 2026, and the annual final 2025 release of September 14, 2026. EIA publications are public domain (EIA Copyrights and Reuse page).
