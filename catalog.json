@@ -1,11 +1,63 @@
 {
   "name": "Energy Almanac",
   "description": "An open, versioned index of public energy data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
+    {
+      "id": "eia-short-term-energy-outlook",
+      "type": "dataset",
+      "title": "EIA Short-Term Energy Outlook (STEO)",
+      "description": "EIA's monthly 18–24 month forecasts of U.S. and global energy supply, demand, and prices — oil, petroleum products, natural gas, electricity, coal, and renewables — with full data tables.\n",
+      "publisher": "U.S. Energy Information Administration (EIA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "forecasts",
+        "prices",
+        "petroleum",
+        "natural-gas",
+        "electricity"
+      ],
+      "source": {
+        "canonical_url": "https://www.eia.gov/outlooks/steo/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": "Web tables are open; API access goes through EIA Open Data, which needs a free key.",
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States and world",
+        "temporal": "recent history plus the forecast horizon",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Energy Information Administration, Short-Term Energy Outlook",
+      "notes": "Human-verified 2026-10-31: HTTP 200. Page shows \"Release Date: October 6, 2026 | Forecast Completed: October 1, 2026 | Next Release Date: November 10, 2026\" and links to all tables and figures. API availability is through EIA's Open Data service (see eia-open-data). EIA publications are public domain.\n"
+    },
     {
       "id": "world-bank-energy-mining",
       "type": "dataset",
