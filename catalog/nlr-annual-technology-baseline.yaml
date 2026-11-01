@@ -1,0 +1,45 @@
+id: nlr-annual-technology-baseline
+type: dataset
+title: Annual Technology Baseline (ATB)
+description: |
+  A consistent set of cost and performance data (capital and operating costs, capacity factors, financing, levelized cost of energy) for electricity generation and transportation technologies in the United States, with projections through 2050, published yearly by the national laboratory formerly called NREL.
+publisher: National Laboratory of the Rockies (NLR, formerly the National Renewable Energy Laboratory), for the U.S. Department of Energy
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- technology-costs
+- projections
+- electricity
+- levelized-cost
+source:
+  canonical_url: https://atb.nlr.gov/
+access:
+  method:
+  - web
+  - bulk
+  - s3
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+- csv
+- parquet
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States
+  temporal: current year with projections through 2050 (2025 electricity ATB latest; earlier editions archived)
+  cadence: annual
+license: CC-BY-4.0 (OEDI submission page for the 2025 ATB, "unless otherwise noted"; the ATB data page also points to NLR's disclaimer agreement)
+attribution: National Laboratory of the Rockies (NLR), Annual Technology Baseline [year]
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The issue's https://atb.nrel.gov/ did not resolve from this session (proxy 502, like every *.nrel.gov host). After NREL was renamed the National Laboratory of the Rockies (1 December 2025), the site answers at https://atb.nlr.gov/, which is cataloged. It says "The NLR Annual Technology Baseline (ATB) provides a consistent set of technology cost and performance data for energy analysis. The ATB electricity and transportation datasets are freely available", with "projections through 2050". The 2025 electricity data page says "All files are stored on the Open Energy Data Initiative (OEDI)", and links the 2025 ATB Excel workbook (dated 08-27-2026), summary CSV files in the oedi-data-lake S3 bucket ("also available in Apache Parquet format"), and Tableau workbooks. The transportation ATB latest is 2024.
+  Licence checked 2026-11-01: the OEDI submission for the 2025 electricity ATB (https://data.openei.org/submissions/8759) states "License: Content is available under Creative Commons Attribution 4.0 unless otherwise noted." The ATB data page also says "Before downloading Annual Technology Baseline (ATB) data, read the disclaimer agreement", meaning NLR's disclaimer (https://www.nlr.gov/disclaimer), which grants free use and copying with credit to DOE/NLR/Alliance. The transportation ATB's OEDI licence was not checked.
