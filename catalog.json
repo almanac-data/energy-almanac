@@ -1,9 +1,9 @@
 {
   "name": "Energy Almanac",
   "description": "An open, versioned index of public energy data.",
-  "count": 14,
+  "count": 15,
   "by_status": {
-    "live": 14
+    "live": 15
   },
   "entries": [
     {
@@ -460,6 +460,56 @@
       "license": "IAEA Terms of Use — content may be reused \"for use in commercial and non-commercial products or services\" with acknowledgement of the IAEA; databases are \"provided free of charge for educational and informational use\" (not a named open licence; see notes)",
       "attribution": "International Atomic Energy Agency, Power Reactor Information System (PRIS)",
       "notes": "Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). https://pris.iaea.org/ answers a 302 to https://pris-stats.iaea.org (page title \"PRIS Analytics\"), which is cataloged. The page says \"The Power Reactor Information System (PRIS) is the world's authoritative source of official data and statistics on nuclear power development and performance. It contains information collected by the IAEA since 1969\". It shows 417 reactors in operation in 31 countries (379 611 MW(e) net), 78 under construction, 21 in suspended operation, and \"Electricity Produced (2025) 2 635 TWh\", with 2026 editions of the RDS-2 and OPEX reports derived from PRIS. There is a Data Browser (https://pris-stats.iaea.org/data-browser); I did not find or test an export function, so no formats or bulk method are listed.\nLicence checked 2026-11-01: the PRIS footer's \"Terms of Use\" link (https://nucleus.iaea.org/Pages/Others/Disclaimer.aspx) says under \"Copyright\": \"Content may be adapted, translated, copied, printed and downloaded for private study, research and teaching purposes, and for use in commercial and non-commercial products or services, provided that appropriate acknowledgement of the IAEA as the source is given\". Under \"Digital Repositories and Databases\": \"The data in the IAEA digital repositories and databases is provided free of charge for educational and informational use\", and it may include third-party data. The two clauses differ on commercial use, so both are quoted; a steward may want IAEA to clarify.\n"
+    },
+    {
+      "id": "irena-irenastat",
+      "type": "dataset",
+      "title": "IRENA Statistics (IRENASTAT)",
+      "description": "The International Renewable Energy Agency's statistics on renewable and non-renewable electricity capacity and generation by country and technology, renewable shares, heat generation and renewable energy finance, published through the IRENASTAT PX-Web query tool and API.\n",
+      "publisher": "International Renewable Energy Agency (IRENA)",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
+      "topics": [
+        "renewables",
+        "capacity",
+        "generation",
+        "finance",
+        "global"
+      ],
+      "source": {
+        "canonical_url": "https://pxweb.irena.org/pxweb/en/IRENASTAT"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (224 countries/areas and regions)",
+        "temporal": "2000-2025 (electricity capacity and generation)",
+        "cadence": "irregular"
+      },
+      "license": "unverified — IRENA's terms page on www.irena.org returned 403 to every client; the PX-Web footer says only \"© 2026 IRENA - International Renewable Energy Agency. All Rights Reserved.\"",
+      "attribution": "IRENA, IRENASTAT Online Data Query Tool",
+      "notes": "Human-verified 2026-11-01: HTTP 200 for https://pxweb.irena.org/pxweb/en/IRENASTAT (curl and headless Chromium). On 2026-10-31 the issue reported a 502 here; it answered today. The page reads \"IRENASTAT Online Data Query Tool\" with topics Finance, Heat Generation, and Power Capacity and Generation. The PX-Web API (https://pxweb.irena.org/api/v1/en/IRENASTAT) returned HTTP 200 JSON. Its Power Capacity and Generation folder lists \"Electricity statistics by Country/area, Technology, Data Type, Grid connection and Year\" (Country_ELECSTAT_2026_H2_PX.px, updated 2026-09-28), with 224 countries/areas, 26 technologies, capacity (MW) and generation (GWh), and years 2000-2025. The issue's https://www.irena.org/Data returned \"403 Forbidden Microsoft-Azure-Application-Gateway/v2\" to curl and to headless and headed (xvfb) Chromium, so the PX-Web tool is cataloged. PX-Web usually offers CSV/XLSX exports, which I did not test; only JSON from the API was seen. Cadence is irregular: the table names suggest half-yearly releases (2026_H2).\nLicence checked 2026-11-01: not verified. https://www.irena.org/Terms-of-Use returned 403 to WebFetch, and the whole www.irena.org site returned 403 to curl and to both Chromium modes. The PX-Web footer reads \"© 2026 IRENA - International Renewable Energy Agency. All Rights Reserved.\", a website footer rather than a data licence. No licence is asserted.\n"
     },
     {
       "id": "jodi-gas-world-database",

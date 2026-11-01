@@ -1,0 +1,43 @@
+id: irena-irenastat
+type: dataset
+title: IRENA Statistics (IRENASTAT)
+description: |
+  The International Renewable Energy Agency's statistics on renewable and non-renewable electricity capacity and generation by country and technology, renewable shares, heat generation and renewable energy finance, published through the IRENASTAT PX-Web query tool and API.
+publisher: International Renewable Energy Agency (IRENA)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- renewables
+- capacity
+- generation
+- finance
+- global
+source:
+  canonical_url: https://pxweb.irena.org/pxweb/en/IRENASTAT
+access:
+  method:
+  - web
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- json
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (224 countries/areas and regions)
+  temporal: 2000-2025 (electricity capacity and generation)
+  cadence: irregular
+license: unverified — IRENA's terms page on www.irena.org returned 403 to every client; the PX-Web footer says only "© 2026 IRENA - International Renewable Energy Agency. All Rights Reserved."
+attribution: IRENA, IRENASTAT Online Data Query Tool
+notes: |
+  Human-verified 2026-11-01: HTTP 200 for https://pxweb.irena.org/pxweb/en/IRENASTAT (curl and headless Chromium). On 2026-10-31 the issue reported a 502 here; it answered today. The page reads "IRENASTAT Online Data Query Tool" with topics Finance, Heat Generation, and Power Capacity and Generation. The PX-Web API (https://pxweb.irena.org/api/v1/en/IRENASTAT) returned HTTP 200 JSON. Its Power Capacity and Generation folder lists "Electricity statistics by Country/area, Technology, Data Type, Grid connection and Year" (Country_ELECSTAT_2026_H2_PX.px, updated 2026-09-28), with 224 countries/areas, 26 technologies, capacity (MW) and generation (GWh), and years 2000-2025. The issue's https://www.irena.org/Data returned "403 Forbidden Microsoft-Azure-Application-Gateway/v2" to curl and to headless and headed (xvfb) Chromium, so the PX-Web tool is cataloged. PX-Web usually offers CSV/XLSX exports, which I did not test; only JSON from the API was seen. Cadence is irregular: the table names suggest half-yearly releases (2026_H2).
+  Licence checked 2026-11-01: not verified. https://www.irena.org/Terms-of-Use returned 403 to WebFetch, and the whole www.irena.org site returned 403 to curl and to both Chromium modes. The PX-Web footer reads "© 2026 IRENA - International Renewable Energy Agency. All Rights Reserved.", a website footer rather than a data licence. No licence is asserted.
