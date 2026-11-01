@@ -1,0 +1,40 @@
+id: iaea-pris
+type: dataset
+title: IAEA Power Reactor Information System (PRIS)
+description: |
+  The IAEA's database of the world's nuclear power reactors: units in operation, under construction, suspended and in decommissioning, with design characteristics, net capacity, electricity production and operating performance, collected since 1969 through data providers nominated by Member States.
+publisher: International Atomic Energy Agency (IAEA)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- nuclear
+- reactors
+- electricity
+- global
+source:
+  canonical_url: https://pris-stats.iaea.org/
+access:
+  method:
+  - web
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format: []
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (IAEA Member States with nuclear power)
+  temporal: 1969 to present (2025 electricity production latest)
+  cadence: irregular
+license: IAEA Terms of Use — content may be reused "for use in commercial and non-commercial products or services" with acknowledgement of the IAEA; databases are "provided free of charge for educational and informational use" (not a named open licence; see notes)
+attribution: International Atomic Energy Agency, Power Reactor Information System (PRIS)
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). https://pris.iaea.org/ answers a 302 to https://pris-stats.iaea.org (page title "PRIS Analytics"), which is cataloged. The page says "The Power Reactor Information System (PRIS) is the world's authoritative source of official data and statistics on nuclear power development and performance. It contains information collected by the IAEA since 1969". It shows 417 reactors in operation in 31 countries (379 611 MW(e) net), 78 under construction, 21 in suspended operation, and "Electricity Produced (2025) 2 635 TWh", with 2026 editions of the RDS-2 and OPEX reports derived from PRIS. There is a Data Browser (https://pris-stats.iaea.org/data-browser); I did not find or test an export function, so no formats or bulk method are listed.
+  Licence checked 2026-11-01: the PRIS footer's "Terms of Use" link (https://nucleus.iaea.org/Pages/Others/Disclaimer.aspx) says under "Copyright": "Content may be adapted, translated, copied, printed and downloaded for private study, research and teaching purposes, and for use in commercial and non-commercial products or services, provided that appropriate acknowledgement of the IAEA as the source is given". Under "Digital Repositories and Databases": "The data in the IAEA digital repositories and databases is provided free of charge for educational and informational use", and it may include third-party data. The two clauses differ on commercial use, so both are quoted; a steward may want IAEA to clarify.
