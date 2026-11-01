@@ -42,10 +42,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.eia.gov/electricity/data/eia860/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (plant and generator level)",
@@ -92,10 +94,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.eia.gov/electricity/data/eia923/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (plant level)",
@@ -144,10 +148,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.eia.gov/opendata/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national, state, plant level depending on dataset); some international series",
@@ -196,10 +202,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.eia.gov/outlooks/steo/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States and world",
@@ -246,10 +254,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.eia.gov/state/seds/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (50 states and DC)",
@@ -297,10 +307,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 403,
+        "final_url": "https://ember-energy.org/data/yearly-electricity-data/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (country level, plus regional aggregates)",
@@ -347,10 +359,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.epa.gov/egrid",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (plant, state, balancing authority, eGRID subregion)",
@@ -401,10 +415,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://ec.europa.eu/eurostat/web/energy/database",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "EU member states (plus some EFTA and candidate countries)",
@@ -448,9 +464,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-11-01",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://pris-stats.iaea.org/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (IAEA Member States with nuclear power)",
@@ -498,9 +516,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-11-01",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://pxweb.irena.org/pxweb/en/IRENASTAT",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (224 countries/areas and regions)",
@@ -548,10 +568,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.jodidata.org/gas/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (participating economies)",
@@ -599,10 +621,12 @@
       "status_since": "2026-10-31",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "checked": "2026-11-01",
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.jodidata.org/oil/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (participating economies)",
@@ -652,9 +676,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-11-01",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://atb.nlr.gov/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States",
@@ -699,9 +725,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-11-01",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://nsrdb.nlr.gov/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States and selected international locations (western hemisphere from GOES satellites; India and others)",
@@ -750,7 +778,7 @@
       "status_since": "2026-07-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-08-23",
+        "checked": "2026-11-01",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://data.worldbank.org/topic/energy-and-mining",
