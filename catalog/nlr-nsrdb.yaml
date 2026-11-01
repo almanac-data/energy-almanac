@@ -1,0 +1,41 @@
+id: nlr-nsrdb
+type: dataset
+title: National Solar Radiation Database (NSRDB)
+description: |
+  A serially complete collection of hourly and half-hourly solar irradiance (global horizontal, direct normal, diffuse horizontal) and meteorological data for the United States and a growing set of international locations, with typical meteorological year (TMY) files, from the national laboratory formerly called NREL.
+publisher: National Laboratory of the Rockies (NLR, formerly the National Renewable Energy Laboratory), for the U.S. Department of Energy
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- solar
+- irradiance
+- meteorology
+- renewables
+source:
+  canonical_url: https://nsrdb.nlr.gov/
+access:
+  method:
+  - web
+  - api
+  auth_required: false
+  auth_note: The NSRDB Viewer download needs no key; the NSRDB API on developer.nlr.gov needs a free API key.
+  rate_limit: null
+format: []
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States and selected international locations (western hemisphere from GOES satellites; India and others)
+  temporal: 1998-2025 (US GOES data)
+  cadence: annual
+license: NLR data notice — free use and copying, provided the notice is kept and DOE/NLR/Alliance is credited (NLR Disclaimer, "Data and Software"; not a named open licence; NLR is contractor-operated, so not treated as US Gov work)
+attribution: National Solar Radiation Database (NSRDB), U.S. Department of Energy / National Laboratory of the Rockies (NLR)
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The issue's https://nsrdb.nrel.gov/ did not resolve: curl got a proxy 502 and WebFetch got ENOTFOUND, as for every *.nrel.gov host this session. The Department of Energy renamed NREL the National Laboratory of the Rockies on 1 December 2025, and the site now answers at https://nsrdb.nlr.gov/, which is cataloged. Whether nrel.gov redirects there on an open network was not established. The page reads "NSRDB 2025 GOES satellite data for the western hemisphere is now available" and "NSRDB data is publicly available at no cost. The data can be accessed via the NSRDB Viewer Application" (https://maps.nlr.gov/nsrdb-viewer/). The U.S. data page lists "Years Covered 1998-2025". A keyless call to the NSRDB API on developer.nlr.gov returned 403 "API_KEY_MISSING". Not checked: download formats, the HSDS/cloud access.
+  Licence checked 2026-11-01: the NLR Disclaimer (https://www.nlr.gov/disclaimer, last updated Dec. 10, 2025), "Data and Software" section: "The user is granted the right, without any fee or cost, to use or copy the Data, provided that this entire notice appears in all copies of the Data. Further, the user agrees to credit the U.S. Department of Energy (DOE)/NLR/ALLIANCE in any publication that results from the use of the Data." The DOE/NLR/Alliance names may not be used to endorse products without permission. NLR is "operated for the U.S. Department of Energy by the Alliance for Energy Innovation, LLC", so the data is not a federal employee work.
