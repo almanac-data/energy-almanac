@@ -34,6 +34,13 @@ observed:
   final_url: https://www.eia.gov/electricity/data/eia860/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261104212203/https://www.eia.gov/electricity/data/eia860/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-04'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now.'
 coverage:
   spatial: United States (plant and generator level)
   temporal: 1990-present (with predecessor EIA-860A/860B forms)
