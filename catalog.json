@@ -675,6 +675,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261029075311/https://www.jodidata.org/gas/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-29",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 200)."
+        }
+      ],
       "coverage": {
         "spatial": "global (participating economies)",
         "temporal": "January 2009-present",
@@ -728,6 +738,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111220336/https://www.jodidata.org/oil/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "global (participating economies)",
         "temporal": "January 2002-present",
@@ -782,6 +802,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111220705/https://atb.nlr.gov/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "United States",
         "temporal": "current year with projections through 2050 (2025 electricity ATB latest; earlier editions archived)",
@@ -831,6 +861,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261103021057/https://nsrdb.nlr.gov/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-03",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "United States and selected international locations (western hemisphere from GOES satellites; India and others)",
         "temporal": "1998-2025 (US GOES data)",
@@ -885,6 +925,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111221238/https://data.worldbank.org/topic/energy-and-mining",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "global (World Bank member countries)",
         "temporal": "1960-present (indicator-dependent)",

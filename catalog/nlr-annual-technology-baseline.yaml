@@ -36,6 +36,13 @@ observed:
   final_url: https://atb.nlr.gov/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261111220705/https://atb.nlr.gov/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-11'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now.'
 coverage:
   spatial: United States
   temporal: current year with projections through 2050 (2025 electricity ATB latest; earlier editions archived)
