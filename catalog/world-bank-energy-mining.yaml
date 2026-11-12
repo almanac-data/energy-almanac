@@ -36,6 +36,13 @@ observed:
   final_url: https://data.worldbank.org/topic/energy-and-mining
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261111221238/https://data.worldbank.org/topic/energy-and-mining
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-11'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now.'
 coverage:
   spatial: global (World Bank member countries)
   temporal: 1960-present (indicator-dependent)
